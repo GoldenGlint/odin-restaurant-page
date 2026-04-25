@@ -77,6 +77,14 @@ nav{
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--ghost);
+    color: var(--cerulean);
+    transform: scale(1.08);
 }
 
 .button svg {
