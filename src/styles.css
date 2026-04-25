@@ -1,3 +1,31 @@
+:root {
+    /*white*/
+    --pure-white: #FFFFFF;
+    --ghost: #F4F7FB;
+    --ice: #E8F0F7;
+    --mist: #D6E5F3;
+
+    /*blue-palette*/
+    --sky: #A8CBE8;
+    --cerulean: #6BAED6;
+    --ocean: #3A80B5;
+    --deep-sea:#1F5A8A;
+    --slate: #2E4057;
+
+    /*yellow & amber*/
+    --cream: #FFF8DC;
+    --lemon: #FFE566;
+    --solar: #F5C800;
+    --amber: #E0A800;
+    --honey: #B37E00;
+
+    /*darks & blacks*/
+    --charcoal:#3D3D3D;
+    --ink:#1A1A2E;
+    --abyss:#0D0D1A;
+    --pure-black:#000000;
+}
+
 body {
     background-color: lightblue;
 }
