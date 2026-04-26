@@ -113,6 +113,7 @@ nav{
   width: min(90vw, 100vh);
   height: min(88vw, 88vh);
   justify-items: center;
+  position: relative;
   
 }
 
@@ -129,4 +130,45 @@ nav{
 #photo-grid img:first-child {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+#middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.middle{
+    color: var(--charcoal);
+    font-size: 2rem;
+
+}
+
+#learn{
+    background-color: var(--amber);
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+    color: var(--charcoal);
+    border: 2px thin var(--charcoal);
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+    cursor: pointer;
+}
+
+#learn:hover{
+    background-color: var(--mist);
+    color: var(--amber);
+    transform: scale(1.08);
 }
