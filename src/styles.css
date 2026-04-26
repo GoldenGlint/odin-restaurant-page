@@ -101,17 +101,19 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #photo-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 3fr 2fr 2.5fr;
   gap: 2px;
   padding: 2px;
-  width: min(90vw, 90vh);
-  height: min(90vw, 90vh);
+  width: min(90vw, 100vh);
+  height: min(88vw, 88vh);
   justify-items: center;
+  
 }
 
 #photo-grid img {
@@ -119,4 +121,12 @@ nav{
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
+  min-height: 0;
+  border: 2px solid var(--cream);
+  
+}
+
+#photo-grid img:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
 }
