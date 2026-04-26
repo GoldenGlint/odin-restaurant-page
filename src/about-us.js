@@ -29,14 +29,18 @@ usContainer.appendChild(intro);
 usContainer.appendChild(story);
 usContainer.appendChild(exploreButton);
 
-chinese=document.createElement("img");
-img.src=chineseImg;
-img.alt="Chinese Festival";
+const chinese=document.createElement("img");
+chinese.src=chineseImg;
+chinese.alt="Chinese Festival";
+chinese.id="chinese";
 
 const abtWrapper=document.createElement("div");
 abtWrapper.id="about-wrapper";
 
 abtWrapper.appendChild(chinese);
 abtWrapper.appendChild(usContainer);
+
+const content = document.querySelector("#content");
+content.appendChild(abtWrapper);
 
 }

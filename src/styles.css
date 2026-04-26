@@ -98,10 +98,7 @@ nav{
     background-color: var(--cerulean);
     height: 90vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    
 }
 
 #photo-grid {
@@ -184,11 +181,12 @@ nav{
   height: auto;
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 #us-container {
   position: absolute;
-  top: 10vh;
+  top: 0;
   left: 2vw;
   width: 40%;
   display: flex;
@@ -213,6 +211,7 @@ nav{
 #cooking{
     border: 1px solid var(--amber);
     border-radius: 4px;
+    margin-top: calc(2rem);
 }
 
 #explore{
