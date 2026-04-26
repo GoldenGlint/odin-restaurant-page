@@ -3,6 +3,11 @@ import cookingImg from "./photos/cooking.jpg";
 
 export const aboutUs = () => {
 
+const content=document.querySelector("#content");
+content.innerHTML = "";
+
+/* Create us-container */
+
 const cooking = document.createElement("img");
 cooking.src = cookingImg;
 cooking.alt = "cooking";
@@ -29,6 +34,8 @@ usContainer.appendChild(intro);
 usContainer.appendChild(story);
 usContainer.appendChild(exploreButton);
 
+/* add photo and wrapper */
+
 const chinese=document.createElement("img");
 chinese.src=chineseImg;
 chinese.alt="Chinese Festival";
@@ -37,10 +44,11 @@ chinese.id="chinese";
 const abtWrapper=document.createElement("div");
 abtWrapper.id="about-wrapper";
 
+/* add all the content */
+
 abtWrapper.appendChild(chinese);
 abtWrapper.appendChild(usContainer);
 
-const content = document.querySelector("#content");
 content.appendChild(abtWrapper);
 
 }

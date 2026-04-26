@@ -10,6 +10,12 @@ import xiaoLongBaoImg from "./photos/xiao-long-bao.jpg";
 
 
 export const homepage = () => {
+const content=document.querySelector("#content");
+content.innerHTML = "";
+
+content.style.display = "flex";
+content.style.alignItems = "center";
+content.style.justifyContent = "center";
 //create middle
 const middle=document.createElement("div");
 const caption=document.createElement("h1");
@@ -76,7 +82,7 @@ photoGrid.appendChild(porkBelly);
 photoGrid.appendChild(stirFryVeggies);
 photoGrid.appendChild(xiaoLongBao);
 
-const content=document.querySelector("#content");
+
 content.appendChild(photoGrid);
 content.appendChild(middle);
 
