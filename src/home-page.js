@@ -16,6 +16,9 @@ content.innerHTML = "";
 content.style.display = "flex";
 content.style.alignItems = "center";
 content.style.justifyContent = "center";
+content.style.overflow = "hidden";
+content.style.height = "90vh";
+content.style.height = "auto";
 //create middle
 const middle=document.createElement("div");
 const caption=document.createElement("h1");
