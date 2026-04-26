@@ -9,7 +9,7 @@ import stirFryVeggiesImg from "./photos/stir-fry-veggies.jpg"
 import xiaoLongBaoImg from "./photos/xiao-long-bao.jpg";
 
 
-export const homepage = () => {
+export const homePage = () => {
 const content=document.querySelector("#content");
 content.innerHTML = "";
 
